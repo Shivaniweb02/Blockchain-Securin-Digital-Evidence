@@ -1,0 +1,254 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#output-container{
+  color: black;
+}
+.modalContainer {
+  width: 500px;
+  height: auto;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.986);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer {
+  display: inline-block;
+  text-align: center;
+}
+.title {
+  display: inline-block;
+  text-align: center;
+  font-size:30px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 1px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: rgb(188, 0, 38);
+}
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+}
+
+/* Input container styles */
+.input-container {
+  position: relative;
+  margin: 50px auto;
+  width: 400px;
+}
+
+.input-container input {
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #333;
+}
+
+.input-container input:focus,
+.input-container input:not(:placeholder-shown) {
+  outline: none;
+}
+
+.input-container label {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #ccc;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -25px;
+  font-size: 12px;
+  color: #333;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container input:focus + .underline,
+.input-container input:not(:placeholder-shown) + .underline {
+  height: 3px;
+}
+
+/* input[type="text"]:focus {
+  background-color: lightblue;
+}
+
+.input-container {
+  position: relative;
+  margin: 50px auto;
+  width: 300px;
+}
+
+.input-container input {
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #333;
+}
+
+.input-container input:focus,
+.input-container input:not(:placeholder-shown) {
+  outline: none;
+}
+
+.input-container label {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #ccc;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -25px;
+  font-size: 12px;
+  color: #333;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container input:focus + label + .underline,
+.input-container input:not(:placeholder-shown) + label + .underline {
+  background-color: #333;
+}
+
+.input-container input:focus + label + .underline {
+  transform: scaleX(1);
+}
+
+.input-container input:not(:focus):not(:placeholder-shown) + label + .underline {
+  transform: scaleX(0);
+}
+
+.input-container input:focus + label {
+  color: #333;
+}
+
+.input-container input::placeholder {
+  color: transparent;
+} */
+
+.select-container {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  appearance: none;
+}
+
+.select-container select::-ms-expand {
+  display: none;
+}
+
+.select-container select:focus {
+  outline: none;
+}
+
+.select-container::before {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.select-container select:focus +::before {
+  color: #666;
+}
+
+.select-container select option {
+  padding: 10px;
+  background-color: #fff;
+}
